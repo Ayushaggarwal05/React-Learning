@@ -14,15 +14,19 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
         ~you can make a gitignore file to keep them for not uploading in git hub as they can be form anytime.
         ~npm parcel indec.html (this will run your server at localHost 1234)
         ~npm parcel build index.html (will ready your file for production)
+        ~import react and react dom to js file
 
 -> Improvements in package.json:
 
         ~update dependencies.
         ~update browserslist.
-        ~update script and write start:npm parcel index.html to short to run for terminal as then we have to write only (npm sun start or npm start)
-        ~update script and write start:npm build parcel index.html to short to run for terminal as then we have to write only (npm sun build)
+  *     ~update script and write start:npm parcel index.html to short to run for terminal as then we have to write only (npm sun start or 
+        npm start)
+  *     ~update script and write start:npm build parcel index.html to short to run for terminal as then we have to write only (npm sun build)
 
-        
+-> write tag in jsx in camel case form.
+-> React Functional components is a function in a javascript which return jsx code and name of the function should start with capital letter as so js can identify it as react functional components.
+
         
         
 
