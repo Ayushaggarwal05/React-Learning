@@ -1,20 +1,68 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+// This is a code written in react:-
 
-const  parent = React.createElement("div" , {id : "parent"} , [
-    React.createElement("div", {id:"child1"},[
-        React.createElement("h1" , {} , "I am Learning React"),
-        React.createElement("h2" , {} , "From Namaste React")
-    ]),
-    React.createElement("div", {id:"child2"},[
-        React.createElement("h1" , {} , "This is h1 tag from React"),
-        React.createElement("h2" , {} , "This is h1 tag from React")
-    ])
-]);
+// const  parent = React.createElement("div" , {id : "parent"} , [
+//     React.createElement("div", {id:"child1"},[
+//         React.createElement("h1" , {} , "I am Learning React"),
+//         React.createElement("h2" , {} , "From Namaste React")
+//     ]),
+//     React.createElement("div", {id:"child2"},[
+//         React.createElement("h1" , {} , "This is h1 tag from React"),
+//         React.createElement("h2" , {} , "This is h1 tag from React")
+//     ])
+// ]);
+
+// this is written in JSX :- 
+
+// const jsxheading = (
+//     <h1 id="heading">Written in JSX format</h1>
+// );
+// console.log(jsxheading);
 
 
-const heading = React.createElement("h1" , null , "Hello World By React!!");
+//-------------React ELement---->
+
+// const heading = (
+//     <h1 className="first" tabIndex={5}>
+//         Namaste React !!!
+//     </h1>
+// );
+
+// ------------------React Functional Components--->
+
+// const Headingcomponent = () => {
+//     return <h2>This is a javascript reaction functional component </h2>
+// };
+// const Headingcomponent2 = () => <h2>This is a javascript reaction functional component </h2>;   // same as above
+// const Headingcomponent3 = () => (
+//     <h2>This is a javascript reaction functional component </h2>                // same
+// );
+
+
+const title = (
+    <h1>Namaste React Using JSX</h1>
+);
+const Title = () => (
+    <h1>Namaste React Using JSX</h1>
+);
+
+// component composition 
+const Headingcomponent = () => (
+    <div id="container">
+        {/*  This is a way to call react component  */}
+        {/* <Title /> */}
+        {/*  we can use {} brackets for use of javascript inside jsx code. */}
+        {/*  this is a way to call react element. */}
+        {/* {title} */}
+
+        <h1>Namaste React Functional Components</h1>
+    </div>
+);
+
+// const heading = React.createElement("h1" , null , "Hello World By React!!");
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(parent);
+// root.render(heading);             // element render
+root.render(<Headingcomponent/>)  // component render 
 
