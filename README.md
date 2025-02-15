@@ -25,8 +25,11 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
   *     ~update script and write start:npm build parcel index.html to short to run for terminal as then we have to write only (npm sun build)
 
 -> write tag in jsx in camel case form.
+
 -> React Functional components is a function in a javascript which return jsx code and name of the function should start with capital letter as so js can identify it as react functional components.
 
-        
+-> "^Confit driven UI^" : this a practice that all company follows as it means that the UI of the page will change according to the data comming from the backend.
+    ex- swiggy ,zomato and any app uses location based offer.
+
         
 

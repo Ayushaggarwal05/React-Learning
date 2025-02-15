@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./components/header";
+import Body from "./components/body";
 
 // This is a code written in react:-
 
@@ -41,28 +43,63 @@ import ReactDOM from "react-dom/client";
 // );
 
 
-const title = (
-    <h1>Namaste React Using JSX</h1>
-);
-const Title = () => (
-    <h1>Namaste React Using JSX</h1>
-);
+// const title = (
+//     <h1>Namaste React Using JSX</h1>
+// );
+// const Title = () => (
+//     <h1>Namaste React Using JSX</h1>
+// );
 
-// component composition 
-const Headingcomponent = () => (
-    <div id="container">
-        {/*  This is a way to call react component  */}
-        {/* <Title /> */}
-        {/*  we can use {} brackets for use of javascript inside jsx code. */}
-        {/*  this is a way to call react element. */}
-        {/* {title} */}
+// // component composition 
+// const Headingcomponent = () => (
+//     <div id="container">
+//         {/*  This is a way to call react component  */}
+//         {/* <Title /> */}
+//         {/*  we can use {} brackets for use of javascript inside jsx code. */}
+//         {/*  this is a way to call react element. */}
+//         {/* {title} */}
 
-        <h1>Namaste React Functional Components</h1>
-    </div>
-);
+//         <h1>Namaste React Functional Components</h1>
+//     </div>
+// );
+
+
+
+
+// Starting of a delivery app like swiggy;
+
+/**
+ * header
+ *  - Logo
+ *  - nav-items
+ * body
+ *  - search
+ *  - restaurant container
+ *    - restaurant cards
+ *      - img
+ *      - name of res , star rating , cuisine , delivery time 
+ * footer
+ *  - copyright
+ *  - links
+ *  - address
+ *  - contact
+ */
+
+
+
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header />
+            <Body />
+        </div>
+    );
+};
+
+
 
 // const heading = React.createElement("h1" , null , "Hello World By React!!");
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // root.render(heading);             // element render
-root.render(<Headingcomponent/>)  // component render 
+root.render(<AppLayout/>)  // component render 
 
