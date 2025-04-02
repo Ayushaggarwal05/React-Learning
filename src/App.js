@@ -88,6 +88,7 @@ import Body from "./components/body";
 
 
 const AppLayout = () => {
+    console.log("hi jsx")
     return (
         <div className="app">
             <Header />

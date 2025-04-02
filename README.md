@@ -31,5 +31,11 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
 -> "^Confit driven UI^" : this a practice that all company follows as it means that the UI of the page will change according to the data comming from the backend.
     ex- swiggy ,zomato and any app uses location based offer.
 
+-> Two types of Export/Import:
         
-
+        ~ Default Export/Import:
+                - export default component
+                - import component from "path";
+        ~ Named Export/Import:
+                -export const component
+                -import {component} from "path"; 

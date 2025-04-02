@@ -5,6 +5,7 @@
 
 const RestaurantCard = (props) => {
     const {resData} = props;
+
     return (
         <div className="res-card" style={{ backgroundColor : "#f0f0f0"}}>
             <img className="res-logo" alt="res-logo" src={resData.src}/>
