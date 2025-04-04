@@ -12,7 +12,7 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
         ~nmp install react (will ask some question regarding your file , create package.json and package-lock.json file )
         ~npm install -D parcel (will create parcel-cache and node modules having property to run your server for production with updated version)
         ~you can make a gitignore file to keep them for not uploading in git hub as they can be form anytime.
-        ~npm parcel indec.html (this will run your server at localHost 1234)
+        ~npm parcel index.html (this will run your server at localHost 1234)
         ~npm parcel build index.html (will ready your file for production)
         ~import react and react dom to js file
 
@@ -39,3 +39,8 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
         ~ Named Export/Import:
                 -export const component
                 -import {component} from "path"; 
+
+-> React Hooks:-
+        ~ Normal JS utility function
+        ~ useState() - superpowerful state variable in react           // will be videly used in code for updating pages.
+        ~ useEffect()
