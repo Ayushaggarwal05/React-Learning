@@ -1,6 +1,5 @@
 Hii!! This is my journey to my Learning React JavaScript🚀🚀
 
-
 -> First create basic pages like main html, css , Javascript page.
 -> Then u have to ways to connect React to your project :
 
@@ -20,27 +19,29 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
 
         ~update dependencies.
         ~update browserslist.
-  *     ~update script and write start:npm parcel index.html to short to run for terminal as then we have to write only (npm sun start or 
-        npm start)
-  *     ~update script and write start:npm build parcel index.html to short to run for terminal as then we have to write only (npm sun build)
+
+-     ~update script and write start:npm parcel index.html to short to run for terminal as then we have to write only (npm sun start or
+      npm start)
+-     ~update script and write start:npm build parcel index.html to short to run for terminal as then we have to write only (npm sun build)
 
 -> write tag in jsx in camel case form.
 
 -> React Functional components is a function in a javascript which return jsx code and name of the function should start with capital letter as so js can identify it as react functional components.
 
 -> "^Confit driven UI^" : this a practice that all company follows as it means that the UI of the page will change according to the data comming from the backend.
-    ex- swiggy ,zomato and any app uses location based offer.
+ex- swiggy ,zomato and any app uses location based offer.
 
 -> Two types of Export/Import:
-        
+
         ~ Default Export/Import:
                 - export default component
                 - import component from "path";
         ~ Named Export/Import:
                 -export const component
-                -import {component} from "path"; 
+                -import {component} from "path";
 
 -> React Hooks:-
-        ~ Normal JS utility function
-        ~ useState() - superpowerful state variable in react           // will be videly used in code for updating pages.
-        ~ useEffect()
+~ Normal JS utility function
+~ useState() - superpowerful state variable in react // will be videly used in code for updating pages.
+~ useEffect()
+~ Whenever state variable changes /update react triggers a reconciliation cycle(re-render).

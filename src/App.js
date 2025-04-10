@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/header";
-import Body from "./components/body";
+import Header from "./components/Header";
+// import Header from "./components/header";
+import Body from "./components/Body";
 
 // This is a code written in react:-
 
@@ -16,13 +17,12 @@ import Body from "./components/body";
 //     ])
 // ]);
 
-// this is written in JSX :- 
+// this is written in JSX :-
 
 // const jsxheading = (
 //     <h1 id="heading">Written in JSX format</h1>
 // );
 // console.log(jsxheading);
-
 
 //-------------React ELement---->
 
@@ -42,7 +42,6 @@ import Body from "./components/body";
 //     <h2>This is a javascript reaction functional component </h2>                // same
 // );
 
-
 // const title = (
 //     <h1>Namaste React Using JSX</h1>
 // );
@@ -50,7 +49,7 @@ import Body from "./components/body";
 //     <h1>Namaste React Using JSX</h1>
 // );
 
-// // component composition 
+// // component composition
 // const Headingcomponent = () => (
 //     <div id="container">
 //         {/*  This is a way to call react component  */}
@@ -63,9 +62,6 @@ import Body from "./components/body";
 //     </div>
 // );
 
-
-
-
 // Starting of a delivery app like swiggy;
 
 /**
@@ -77,7 +73,7 @@ import Body from "./components/body";
  *  - restaurant container
  *    - restaurant cards
  *      - img
- *      - name of res , star rating , cuisine , delivery time 
+ *      - name of res , star rating , cuisine , delivery time
  * footer
  *  - copyright
  *  - links
@@ -85,22 +81,17 @@ import Body from "./components/body";
  *  - contact
  */
 
-
-
 const AppLayout = () => {
-    console.log("hi jsx")
-    return (
-        <div className="app">
-            <Header />
-            <Body />
-        </div>
-    );
+  console.log("hi jsx");
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
 };
 
-
-
 // const heading = React.createElement("h1" , null , "Hello World By React!!");
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(heading);             // element render
-root.render(<AppLayout/>)  // component render 
-
+root.render(<AppLayout />); // component render
