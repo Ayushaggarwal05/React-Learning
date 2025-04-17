@@ -40,8 +40,20 @@ ex- swiggy ,zomato and any app uses location based offer.
                 -export const component
                 -import {component} from "path";
 
--> React Hooks:-
-~ Normal JS utility function
-~ useState() - superpowerful state variable in react // will be videly used in code for updating pages.
-~ useEffect()
-~ Whenever state variable changes /update react triggers a reconciliation cycle(re-render).
+-> React Hooks:
+
+        ~ Normal JS utility function
+        ~ useState() - superpowerful state variable in react // will be videly used in code for updating pages.
+        ~ {     if no dependency array => useEffect is called on every render
+                if dependency array is empty => [] useEffect is called on initial render(just once).
+                if denpendency array is[xyz] => called everytime xyz is updated.
+          }
+        ~ useEffect()
+        ~ Whenever state variable changes /update react triggers a reconciliation cycle(re-render).
+
+-> Now installing React-Router-Dom: using the command (npm i react-router-dom).
+~ use this router for the connection between the pages and show the error.
+
+-> Children routes:
+
+        ~Outlet will be avaliable in the router react which allow the body to move to another data.
