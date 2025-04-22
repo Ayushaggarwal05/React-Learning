@@ -57,3 +57,17 @@ ex- swiggy ,zomato and any app uses location based offer.
 -> Children routes:
 
         ~Outlet will be avaliable in the router react which allow the body to move to another data.
+
+-> Life cycle of class based component:
+
+        {       constructor     =>     render   =>        component did mount    }   called one by one
+        parent constructor
+        parent render
+        firstchild constructor
+        firstchild render
+        secondchild constructor
+        secondchild render
+        firstchild component did mount
+        secondchild component did mount
+        parent component did mount
+        -------->>>>>>>      Mounting , updating , unmounting   <<<<<<<<<<<------------
