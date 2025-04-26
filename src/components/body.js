@@ -2,6 +2,7 @@ import RestaurantCard from "./RestaurantCard";
 import { useState, useEffect } from "react";
 import Shimmer from "./Shimmers";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utilities/useOnlineStatus";
 
 // This is a body using data in other file:
 // const Body = () => {
@@ -54,6 +55,15 @@ const Body = () => {
       json?.data?.cards[1]?.groupedCard?.cardGroupMap?.RESTAURANT?.cards
     );
   };
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false)
+    return (
+      <h1>
+        Looks Like you're offline!!! Please check your internet connection
+      </h1>
+    );
 
   // Normal way of wrinting variable in JS
   // let ListOfRestaurant = ["Apple"];
