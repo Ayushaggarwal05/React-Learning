@@ -75,3 +75,5 @@ ex- swiggy ,zomato and any app uses location based offer.
 -> Cncept of LAZY Loading and SUSPENCE :
 ``where we get to make a new js file in our main page(or make a new bunddle js in the network area making the code faster) from loading and suspense will wait til we access the fie in lasy fromat.
 {chunking , code spliting ,dynamic bundling ,lazy loading ,on demand loading ,dynamix import } same name differt words
+
+-> Install Tailwind css using the chrome website into the system.
