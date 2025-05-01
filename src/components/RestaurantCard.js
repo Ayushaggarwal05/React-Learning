@@ -1,11 +1,16 @@
 // Concept of "props" this is an argument which acts like an object when we add data to a function in calling or we can directly use it also
 // insteadd of props  we can use {resName , cusine , rating} also...
 
+import { useContext } from "react";
+import UserContext from "../utilities/UserContext";
+
 const RestaurantCard = (props) => {
   const { resData } = props;
 
+  const { loggedInUser } = useContext(UserContext);
+
   return (
-    <div className="res-card m-4 p-4 w-[220px] rounded-lg bg-gray-100 hover:bg-gray-200 h-[470px] hover:border-1">
+    <div className="res-card m-4 p-4 w-[220px] rounded-lg bg-gray-100 hover:bg-gray-200 h-[490px] hover:border-1">
       <img
         className="res-logo rounded-xl"
         alt="res-logo "
@@ -23,6 +28,7 @@ const RestaurantCard = (props) => {
       <h4>{resData.card.card.info.avgRating} stars</h4>
       <h4>₹{resData.card.card.info.costForTwo / 100} for Two</h4>
       <h4>{resData.card.card.info.sla.deliveryTime} Minutes</h4>
+      <h4>User : {loggedInUser} </h4>
     </div>
   );
 };

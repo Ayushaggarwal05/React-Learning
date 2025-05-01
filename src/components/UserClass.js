@@ -34,8 +34,9 @@ class UserClass extends React.Component {
 
     return (
       <div className="user-card">
-        <h1>Count : {count}</h1>
+        <h1 className="m-3 px-10 text-2xl">Count : {count}</h1>
         <button
+          className="border-2 m-2 p-2 font-bold cursor-pointer "
           onClick={() => {
             this.setState({
               count: this.state.count + 1,
@@ -44,6 +45,7 @@ class UserClass extends React.Component {
           Count Increase
         </button>
         <button
+          className="border-2 m-2 p-2 font-bold  cursor-pointer"
           onClick={() => {
             this.setState({
               count: 0,

@@ -34,6 +34,8 @@ const Body = () => {
 
   const [searchText, setsearchText] = useState("");
 
+  // console.log(ListOfRestaurants);
+
   useEffect(() => {
     fetchdata();
   }, []);
@@ -79,14 +81,14 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
-            className="search-box  border border-solid border-black"
+            className="search-box  border border-solid border-black rounded-xl h-7 w-60"
             value={searchText}
             onChange={(e) => {
               setsearchText(e.target.value);
             }}
           />
           <button
-            className="px-4 py-2 bg-green-100 m-4 rounded-xl cursor-pointer"
+            className="px-4 py-2 bg-green-100 m-4 rounded-xl cursor-pointer "
             onClick={() => {
               //Filter the restraunt cards and update the UI
 

@@ -1,14 +1,17 @@
 // Way to write a Named Import
 
 import { LOGO_URL } from "../utilities/constants";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utilities/useOnlineStatus";
+import UserContext from "../utilities/UserContext";
 
 const Header = () => {
   const [loginbtn, setloginbtn] = useState("Login");
 
   const onlineStatus = useOnlineStatus();
+
+  const { loggedInUser } = useContext(UserContext);
 
   return (
     <div className="flex justify-between shadow-lg bg-pink-100 m-1  h-[120px] sm:bg-yellow-50  lg:bg-green-100">
@@ -34,7 +37,7 @@ const Header = () => {
           </li>
           <li className="px-4  text-lg ">CART</li>
           <button
-            className="login px-4  text-lg "
+            className="login px-4  text-lg cursor-pointer"
             onClick={() => {
               loginbtn === "Login"
                 ? setloginbtn("Logout")
@@ -42,6 +45,7 @@ const Header = () => {
             }}>
             {loginbtn}
           </button>
+          <li className="px-4 font-bold">{loggedInUser}</li>
         </ul>
       </div>
     </div>

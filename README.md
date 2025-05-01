@@ -77,3 +77,8 @@ ex- swiggy ,zomato and any app uses location based offer.
 {chunking , code spliting ,dynamic bundling ,lazy loading ,on demand loading ,dynamix import } same name differt words
 
 -> Install Tailwind css using the chrome website into the system.
+
+-> Higher Order Component:
+~~>> these are the component which takes a component and return a component which further returns a jsx.
+
+--> Interview question is on controlled and uncontrolled component( watch restaurantmenu is controlling restaurantcategory by props on opening and closing)

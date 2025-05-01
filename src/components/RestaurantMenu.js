@@ -1,11 +1,15 @@
 import Shimmer from "./Shimmers";
 import { useParams } from "react-router-dom";
 import useRestaurantMenu from "../utilities/useRestaurantMenu";
+import RestaurantCategory from "./RestaurantCategory";
+import { useState } from "react";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const resInfo = useRestaurantMenu(resId);
+
+  const [showIndex, setShowIndex] = useState(null);
 
   if (resInfo === null) return <Shimmer />;
 
@@ -16,26 +20,32 @@ const RestaurantMenu = () => {
   const { itemCards } =
     resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[6]?.card?.card;
 
-  console.log(itemCards);
+  const categories =
+    resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(
+      (c) =>
+        c.card?.card?.["@type"] ===
+        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+    );
+
+  // console.log(categories);
 
   return (
-    <div className="menu m-4 p-4 ">
-      <h1 className="my-3 font-bold text-2xl">{name}</h1>
-      <p className="pl-10 text-lg font-medium mb-8">
+    <div className="menu text-center ">
+      <h1 className="my-6  font-bold text-2xl">{name}</h1>
+      <p className=" text-lg font-medium ">
         {cuisines.join(", ")} - {costForTwoMessage}
       </p>
-      <h2 className="m-4 font-mono font-extrabold text-3xl">Menu</h2>
-      <ul>
-        <li>
-          <h3 className="ml-15 mb-5 font-medium">BreakFast Special</h3>
-        </li>
-        {Array.isArray(itemCards) &&
-          itemCards.map((item) => (
-            <li key={item.card.info.id} className="ml-15 ">
-              {item.card.info.name} - {item.card.info.price / 100}
-            </li>
-          ))}
-      </ul>
+      {/* {Accordian categories} */}
+      {categories.map((category, index) => (
+        <RestaurantCategory
+          key={category?.card?.card?.title}
+          data={category?.card?.card}
+          showItems={index === showIndex ? true : false}
+          setShowIndex={() =>
+            setShowIndex((prevIndex) => (prevIndex === index ? null : index))
+          }
+        />
+      ))}
     </div>
   );
 };
