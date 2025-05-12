@@ -1,8 +1,9 @@
 import RestaurantCard from "./RestaurantCard";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimmer from "./Shimmers";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utilities/useOnlineStatus";
+import UserContext from "../utilities/UserContext";
 
 // This is a body using data in other file:
 // const Body = () => {
@@ -33,6 +34,8 @@ const Body = () => {
   const [FilteredRestaurant, setFilteredRestaurant] = useState([]);
 
   const [searchText, setsearchText] = useState("");
+
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   // console.log(ListOfRestaurants);
 
@@ -102,6 +105,7 @@ const Body = () => {
             Search
           </button>
         </div>
+
         <div className="search m-4 p-4 flex items-center">
           <button
             className="filter-btn  px-4 py-2 bg-gray-100 rounded-xl cursor-pointer"
@@ -114,6 +118,14 @@ const Body = () => {
             }}>
             Top Rated Restaurant
           </button>
+        </div>
+        <div className="search m-4 p-2  flex items-center">
+          <label>User : </label>
+          <input
+            className="border border-black-2 m-2 p-1"
+            value={loggedInUser}
+            onChange={(e) => setUserName(e.target.value)}
+          />
         </div>
       </div>
       <div className="res-container  flex  flex-wrap">
@@ -131,3 +143,7 @@ const Body = () => {
 };
 
 export default Body;
+
+// "https://www.swiggy.com/dapi/restaurants/search/v3?lat=28.7040592&lng=77.10249019999999&str=restaurants&trackingId=560f19d8-03a8-fbcd-5846-7b452fe04765&submitAction=ENTER&queryUniqueId=e564311a-fab7-a1bb-7b86-ee42206c9539"
+
+// https://www.swiggy.com/dapi/restaurants/search/v3?lat=28.7040592&lng=77.10249019999999&str=restaurants&trackingId=70e0c37f-8420-7cd5-183c-af610fcd28dd&submitAction=ENTER&queryUniqueId=34595aa0-2915-2dfa-40b8-560867375902

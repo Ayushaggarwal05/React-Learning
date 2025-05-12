@@ -1,12 +1,12 @@
 Hii!! This is my journey to my Learning React JavaScript🚀🚀
 
--> First create basic pages like main html, css , Javascript page.
--> Then u have to ways to connect React to your project :
+> > > First create basic pages like main html, css , Javascript page.
+> > > Then u have to ways to connect React to your project :
 
         ~ First is to use cnd links available at react site.
         ~ Second through NPM ( also called as Node Package Manager and sometimes we dont prefer to say this :)
 
--> Way to connect React to my laptop without cdn links:
+> > > Way to connect React to my laptop without cdn links:
 
         ~nmp install react (will ask some question regarding your file , create package.json and package-lock.json file )
         ~npm install -D parcel (will create parcel-cache and node modules having property to run your server for production with updated version)
@@ -15,7 +15,7 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
         ~npm parcel build index.html (will ready your file for production)
         ~import react and react dom to js file
 
--> Improvements in package.json:
+> > > Improvements in package.json:
 
         ~update dependencies.
         ~update browserslist.
@@ -24,14 +24,14 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
       npm start)
 -     ~update script and write start:npm build parcel index.html to short to run for terminal as then we have to write only (npm sun build)
 
--> write tag in jsx in camel case form.
+> > > write tag in jsx in camel case form.
 
--> React Functional components is a function in a javascript which return jsx code and name of the function should start with capital letter as so js can identify it as react functional components.
+> > > React Functional components is a function in a javascript which return jsx code and name of the function should start with capital letter as so js can identify it as react functional components.
 
--> "^Confit driven UI^" : this a practice that all company follows as it means that the UI of the page will change according to the data comming from the backend.
-ex- swiggy ,zomato and any app uses location based offer.
+> > > "^Confit driven UI^" : this a practice that all company follows as it means that the UI of the page will change according to the data comming from the backend.
+> > > ex- swiggy ,zomato and any app uses location based offer.
 
--> Two types of Export/Import:
+> > > Two types of Export/Import:
 
         ~ Default Export/Import:
                 - export default component
@@ -40,7 +40,7 @@ ex- swiggy ,zomato and any app uses location based offer.
                 -export const component
                 -import {component} from "path";
 
--> React Hooks:
+> > > React Hooks:
 
         ~ Normal JS utility function
         ~ useState() - superpowerful state variable in react // will be videly used in code for updating pages.
@@ -51,14 +51,14 @@ ex- swiggy ,zomato and any app uses location based offer.
         ~ useEffect()
         ~ Whenever state variable changes /update react triggers a reconciliation cycle(re-render).
 
--> Now installing React-Router-Dom: using the command (npm i react-router-dom).
-~ use this router for the connection between the pages and show the error.
+> > > Now installing React-Router-Dom: using the command (npm i react-router-dom).
+> > > ~ use this router for the connection between the pages and show the error.
 
--> Children routes:
+> > > Children routes:
 
         ~Outlet will be avaliable in the router react which allow the body to move to another data.
 
--> Life cycle of class based component:
+> > > Life cycle of class based component:
 
         {       constructor     =>     render   =>        component did mount    }   called one by one
         parent constructor
@@ -72,13 +72,46 @@ ex- swiggy ,zomato and any app uses location based offer.
         parent component did mount
         -------->>>>>>>      Mounting , updating , unmounting   <<<<<<<<<<<------------
 
--> Cncept of LAZY Loading and SUSPENCE :
-``where we get to make a new js file in our main page(or make a new bunddle js in the network area making the code faster) from loading and suspense will wait til we access the fie in lasy fromat.
-{chunking , code spliting ,dynamic bundling ,lazy loading ,on demand loading ,dynamix import } same name differt words
+> > > Cncept of LAZY Loading and SUSPENCE :
+> > > ``where we get to make a new js file in our main page(or make a new bunddle js in the network area making the code faster) from loading and suspense will wait til we access the fie in lasy fromat.
+> > > {chunking , code spliting ,dynamic bundling ,lazy loading ,on demand loading ,dynamix import } same name differt words
 
--> Install Tailwind css using the chrome website into the system.
+> > > Install Tailwind css using the chrome website into the system.
 
--> Higher Order Component:
-~~>> these are the component which takes a component and return a component which further returns a jsx.
+> > > Higher Order Component:
+> > > ~~>> these are the component which takes a component and return a component which further returns a jsx.
 
---> Interview question is on controlled and uncontrolled component( watch restaurantmenu is controlling restaurantcategory by props on opening and closing)
+> > > Interview question is on controlled and uncontrolled component( watch restaurantmenu is controlling restaurantcategory by props on opening and closing)
+
+> > > Important topic usecontext from react in browsers.
+
+> > > Redux working:
+
+        ~working to make a cart store in website (write data)
+        -> click Add >> dispatch action >> reducer function >> slice of redux store.
+
+        ~ for reading data from store
+        -> we use " selector" and show it on the website cart item
+
+![alt text](<WhatsApp Image 2025-05-03 at 17.17.58.jpeg>)
+
+# 2 types Routing in web pages
+
+- client server Routing
+- Server side Routing
+
+# Redux Toolkit
+
+- Install @reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- SLice (cartslice)
+- Dispatch (action)
+- Selector
+
+> > > How to operate redux:
+
+        ~ import provider from react redux so that we can use provider to our main application to store things.
+        ~ to read items from the store we have to import "useSelector" lib from the redux.
+        ~ to dispatch the item we need a "useDispatch" library from redux.
+        ~ there is a action.payload in the reducers of the cart item so that when we call dispatch with data it automatically update the list of items in the cart.

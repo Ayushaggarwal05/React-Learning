@@ -6,8 +6,10 @@ import About from "./components/About";
 import Conatct from "./components/Contact";
 import Error from "./components/Error";
 import RestaurantMenu from "./components/RestaurantMenu";
-// import UserContext from "./utilities/UserContext";
+import UserContext from "./utilities/UserContext";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import { Provider } from "react-redux";
+import appStore from "./utilities/appStore";
 // import Grocery from "./components/Grocery";
 
 // for Lasy oading of the page  and add suspende to the component as well
@@ -106,14 +108,16 @@ const AppLayout = () => {
 
   console.log("hi jsx");
 
-  // <UserContext.Provider value={{ loggedInUser: userName }}>
   return (
-    <div className="app">
-      <Header />
-      <Outlet />
-    </div>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ loggedInUser: userName, setUserName }}>
+        <div className="app">
+          <Header />
+          <Outlet />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
-  // </UserContext.Provider>;
 };
 
 const appRouter = createBrowserRouter([
