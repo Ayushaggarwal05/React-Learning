@@ -5,9 +5,9 @@ import { addItem } from "../utilities/cartSlice";
 const ItemList = ({ items }) => {
   const dispatch = useDispatch();
 
-  const handleAddItem = () => {
+  const handleAddItem = (item) => {
     // Dispatch in action
-    dispatch(addItem("pizza"));
+    dispatch(addItem(item));
   };
 
   return (
@@ -47,12 +47,14 @@ const ItemList = ({ items }) => {
                   />
                   <button
                     className="absolute bottom-1 right-1 p-2 rounded-lg font-bold w-20 bg-orange-100 text-green-500 shadow-lg cursor-pointer"
-                    onClick={handleAddItem}>
+                    onClick={() => handleAddItem(item)}>
                     ADD
                   </button>
                 </>
               ) : (
-                <button className="p-2 rounded-lg w-20 mx-18 bg-orange-100 text-green-500 shadow-lg font-bold">
+                <button
+                  className="p-2 rounded-lg w-20 mx-18 bg-orange-100 text-green-500 shadow-lg font-bold cursor-pointer"
+                  onClick={() => handleAddItem(item)}>
                   ADD
                 </button>
               )}

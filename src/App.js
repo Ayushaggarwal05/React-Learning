@@ -10,6 +10,7 @@ import UserContext from "./utilities/UserContext";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { Provider } from "react-redux";
 import appStore from "./utilities/appStore";
+import Cart from "./components/Cart";
 // import Grocery from "./components/Grocery";
 
 // for Lasy oading of the page  and add suspende to the component as well
@@ -148,6 +149,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/restaurants/:resId",
         element: <RestaurantMenu />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
     errorElement: <Error />,

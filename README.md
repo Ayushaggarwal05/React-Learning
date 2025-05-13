@@ -115,3 +115,22 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
         ~ to read items from the store we have to import "useSelector" lib from the redux.
         ~ to dispatch the item we need a "useDispatch" library from redux.
         ~ there is a action.payload in the reducers of the cart item so that when we call dispatch with data it automatically update the list of items in the cart.
+        ~In Redux, "subscribing" means that a component (or function) is being notified automatically whenever the Redux store’s state changes, so it can respond accordingly—typically by re-rendering with the latest state.
+
+# Types of Testing (developer)
+
+- Unit Testing
+- Integration Testing
+- End to End Testing
+
+# Settin gup Testing in our App
+
+- Install React testing library
+- Installed Jest
+- INstalled Babel dependencies
+- Configure Babel
+- Configure parcel config file to disable default babel transpilation.
+- Jest configuration ( npx jest --init)
+- Install jsdom library
+- Install @babel/preset-react inside my babel config
+- Install @testing-library/jest-dom
