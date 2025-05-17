@@ -1,16 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1747173289488" clover="3.2.0">
-  <project timestamp="1747173289488" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="6" coveredelements="6" complexity="0" loc="4" ncloc="4" packages="1" files="2" classes="2"/>
-    <file name="Contact.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\Contact.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="2" type="stmt"/>
-    </file>
-    <file name="sum.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\sum.js">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="1" type="stmt"/>
-    </file>
+<coverage generated="1747512097416" clover="3.2.0">
+  <project timestamp="1747512097416" name="All files">
+    <metrics statements="96" coveredstatements="85" conditionals="18" coveredconditionals="13" methods="39" coveredmethods="31" elements="153" coveredelements="129" complexity="0" loc="96" ncloc="96" packages="2" files="15" classes="15"/>
+    <package name="components">
+      <metrics statements="69" coveredstatements="62" conditionals="18" coveredconditionals="13" methods="29" coveredmethods="25"/>
+      <file name="Body.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\Body.js">
+        <metrics statements="28" coveredstatements="22" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="7"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="33" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="36" count="4" type="stmt"/>
+        <line num="38" count="4" type="stmt"/>
+        <line num="42" count="4" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="64" count="4" type="stmt"/>
+        <line num="66" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="77" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="81" count="3" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="99" count="1" type="stmt"/>
+        <line num="100" count="102" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="114" count="0" type="stmt"/>
+        <line num="115" count="0" type="stmt"/>
+        <line num="117" count="0" type="stmt"/>
+        <line num="118" count="0" type="stmt"/>
+        <line num="128" count="0" type="stmt"/>
+        <line num="135" count="210" type="stmt"/>
+      </file>
+      <file name="Contact.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\Contact.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+      </file>
+      <file name="Header.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\Header.js">
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="48" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="ItemList.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\ItemList.js">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="5" coveredmethods="4"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+      </file>
+      <file name="RestaurantCard.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\RestaurantCard.js">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="211" type="stmt"/>
+        <line num="12" count="211" type="stmt"/>
+        <line num="14" count="211" type="stmt"/>
+      </file>
+      <file name="RestaurantCategory.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\RestaurantCategory.js">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="8" count="26" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="26" type="stmt"/>
+      </file>
+      <file name="RestaurantMenu.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\RestaurantMenu.js">
+        <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="5" methods="5" coveredmethods="5"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="14" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="26" count="44" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="40" count="26" type="stmt"/>
+        <line num="45" count="1" type="cond" truecount="1" falsecount="1"/>
+      </file>
+      <file name="Shimmers.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\Shimmers.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+      </file>
+      <file name="sum.js" path="C:\Users\Neeshu\Documents\Courses\React\src\components\sum.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="utilities">
+      <metrics statements="27" coveredstatements="23" conditionals="0" coveredconditionals="0" methods="10" coveredmethods="6"/>
+      <file name="UserContext.js" path="C:\Users\Neeshu\Documents\Courses\React\src\utilities\UserContext.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="4" type="stmt"/>
+      </file>
+      <file name="appStore.js" path="C:\Users\Neeshu\Documents\Courses\React\src\utilities\appStore.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+      <file name="cartSlice.js" path="C:\Users\Neeshu\Documents\Courses\React\src\utilities\cartSlice.js">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+      </file>
+      <file name="constants.js" path="C:\Users\Neeshu\Documents\Courses\React\src\utilities\constants.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
+      <file name="useOnlineStatus.js" path="C:\Users\Neeshu\Documents\Courses\React\src\utilities\useOnlineStatus.js">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+      </file>
+      <file name="useRestaurantMenu.js" path="C:\Users\Neeshu\Documents\Courses\React\src\utilities\useRestaurantMenu.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="3" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

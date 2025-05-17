@@ -1,0 +1,108 @@
+{
+  "card": {
+    "card": {
+      "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+      "info": {
+        "id": "219479",
+        "name": "Bikanervala",
+        "city": "4",
+        "slugs": {
+          "restaurant": "bikanervala-nsp-nsp",
+          "city": "delhi"
+        },
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/20/96655f78-430d-41a9-a670-1236baf480a2_219479.jpg",
+        "address": "PP City Center, Ground Floor 44, Pitampura, Delhi",
+        "locality": "Rani Bagh",
+        "areaName": "Pitampura",
+        "costForTwo": "30000",
+        "costForTwoMessage": "₹300 FOR TWO",
+        "cuisines": [
+          "Chinese",
+          "North Indian",
+          "South Indian",
+          "Desserts",
+          "Snacks",
+          "Sweets"
+        ],
+        "avgRating": 4.3,
+        "feeDetails": {},
+        "avgRatingString": "4.3",
+        "totalRatingsString": "4.4K+",
+        "promoted": true,
+        "adTrackingId": "cid=29249869~p=0~adgrpid=29249869#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=219479~plpr=SEARCH#RESTAURANT~st=restaurants~eid=0cc6e528-16b1-4e11-9f19-ff72e3036fef~srvts=1747421165557",
+        "sla": {
+          "deliveryTime": 26,
+          "minDeliveryTime": 25,
+          "maxDeliveryTime": 30,
+          "lastMileTravel": 5,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "RAIN_MODE_NONE",
+          "slaString": "25-30 MINS",
+          "lastMileTravelString": "5.0 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseMessage": "Closes soon",
+          "opened": true,
+          "restaurantClosedMeta": {}
+        },
+        "aggregatedDiscountInfo": {
+          "visible": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "Green%20Dot%20Awards/Best%20In%20Chole%20Bhature.png",
+              "description": "Delivery!"
+            }
+          ]
+        },
+        "aggregatedDiscountInfoV2": {
+          "visible": true
+        },
+        "ratingSlab": "RATING_SLAB_5",
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {},
+          "commsStyling": {}
+        },
+        "cartOrderabilityNudgeBanner": {
+          "parameters": {},
+          "presentation": {}
+        },
+        "externalRatings": {
+          "aggregatedRating": {
+            "rating": "--"
+          }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+        "featuredSectionInfo": {
+          "sectionTitle": "More"
+        },
+        "campaignId": "29249869"
+      },
+      "analytics": {
+        "screenName": "explore",
+        "context": "{\"tid\":\"560f19d8-03a8-fbcd-5846-7b452fe04765\",\"grid\":\"a10a9057-3235-4e24-8ec0-67522930e2ac\",\"queryUniqueId\":\"e564311a-fab7-a1bb-7b86-ee42206c9539\",\"query\":\"restaurants\",\"adTrackingId\":\"cid=29249869~p=0~adgrpid=29249869#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=219479~plpr=SEARCH#RESTAURANT~st=restaurants~eid=0cc6e528-16b1-4e11-9f19-ff72e3036fef~srvts=1747421165557\"}",
+        "objectValue": "219479",
+        "impressionObjectName": "impression-restaurant-ad",
+        "clickObjectName": "click-restaurant-ad"
+      },
+      "ctaWithParams": {
+        "link": "swiggy://menu",
+        "type": "DEEPLINK",
+        "params": {
+          "sourceRequestId": "237d9a76971049be9e835b70ad25b91d",
+          "qrEnabled": "false",
+          "restaurant_id": "219479",
+          "query": "restaurants",
+          "sourceSessionId": "kmoff2b2-eead-46a9-ba3d-f445e91f0b08",
+          "source": "SEARCH",
+          "isSld": "false"
+        }
+      }
+    }
+  }
+}

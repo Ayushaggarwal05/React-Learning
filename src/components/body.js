@@ -84,6 +84,7 @@ const Body = () => {
         <div className="search m-4 p-4">
           <input
             type="text"
+            data-testid="searchInput"
             className="search-box  border border-solid border-black rounded-xl h-7 w-60"
             value={searchText}
             onChange={(e) => {
@@ -108,7 +109,7 @@ const Body = () => {
 
         <div className="search m-4 p-4 flex items-center">
           <button
-            className="filter-btn  px-4 py-2 bg-gray-100 rounded-xl cursor-pointer"
+            className="filter-btn  px-4 py-2 bg-gray-100 rounded-xl cursor-pointer hover:bg-gray-200"
             onClick={() => {
               const filteredList = ListOfRestaurants.filter(
                 (res) => res.card.card.info.avgRating > 4

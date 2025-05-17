@@ -123,7 +123,7 @@ Hii!! This is my journey to my Learning React JavaScript🚀🚀
 - Integration Testing
 - End to End Testing
 
-# Settin gup Testing in our App
+# Settin gup Testing in our App (JEST)
 
 - Install React testing library
 - Installed Jest
